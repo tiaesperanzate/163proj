@@ -21,6 +21,10 @@ relationship between GDP and medals won
 choropleth maps showing GDP data across different
 countries and medal distribution.
 
+* **rq2.py** - Answer research Question 2 "Is there a relationship between the country sending the athlete and the athlete's sex?"
+
+    * Creates maps for female athletes per country and male athletes per country
+
 * **loadprojdata.py**
     * Loads in and merges the athletes and countries datasets
 
