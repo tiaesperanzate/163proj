@@ -64,4 +64,7 @@ $ pip install -U kaleidoscope
 
 3. Run the file *loadprojdata.py* to get the function for merging the athlete and countries csv datasets
 
-4. Run the file *163proj.py*
+4. Run the file *rq1.py* for research question 1 analysis
+
+5. Run the file *rq2.py* for resarch question 2 analysis
+6. 
