@@ -43,6 +43,7 @@ Data Sources: [Kaggle](https://olympics.com/en/olympic-games/rio-2016) and [ArcG
 * **athletes.csv** - contains information about athletes who competed in the Rio de Janeiro, 2016 Olympics collaborated by Rio 2016 (link to [Download](https://www.kaggle.com/datasets/rio2016/olympic-games?select=athletes.csv))
 * **countries.csv** - contains country, country population, and country GDP information for 2016 (link to [Download](https://www.kaggle.com/datasets/rio2016/olympic-games?select=countries.csv))
 * **World_Countries_Generalized.shp** - contains details and geometries for mapping/plotting shapes of all countries (link to [Download](https://hub.arcgis.com/datasets/esri::world-countries-generalized/explore?location=-0.306120%2C12.403235%2C1.98))
+* **all.csv** - contains countries and their code and iso code (link to [Download](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv))
 
 
 ## How to Reproduce Our Results
