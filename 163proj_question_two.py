@@ -14,20 +14,24 @@ import plotly.express as px
 
 import loadprojdata
 
+def RQ2_map(project_data: gpd.DataFrame) -> None:
+    fig, [ax1, ax2] = plt.subplots(nrows=2)
+    project_data.plot(color='#EEEEEE', ax=ax1)
+    project_data.plot(column='sex_female', ax=ax1, legend=True)
+    project_data.plot(color='#EEEEEE', ax=ax2)
+    project_data.plot(column='sex_male', ax=ax2, legend=True)
 
+    ax1.set_title('Female Athletes Sent to 2016 Olympics by Country')
+    ax2.set_title('Male Athletes Sent to 2016 Olympics by Country')
+    plt.subplots_adjust(hspace=0.5)
 
-
-
-
-
-
-
-
+    plt.savefig('RQ2maps.png')
 
 def main():
     RQ2_data = loadprojdata.RQ2_loading_data(
         'data/athletes.csv',
-        'data/countries.csv'
+        'data/countries.csv',
+        'data/all.csv',
     )
     rq2_map(sums_on_geos(RQ1_data,
                              '/Users/tiaesperanzate/Desktop/cse 163/'
