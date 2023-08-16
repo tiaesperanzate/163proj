@@ -5,6 +5,7 @@ Loads in and merges data
 """
 
 import pandas as pd
+import geopandas as gpd
 
 
 def RQ1_loading_data(athlete_csv: str,
