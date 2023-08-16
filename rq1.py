@@ -95,17 +95,13 @@ def rq1_maps(medal_geodata: gpd.GeoDataFrame) -> None:
 
 def main():
     RQ1_data = loadprojdata.RQ1_loading_data(
-        '/Users/tiaesperanzate/Desktop/cse 163/athletes.csv',
-        '/Users/tiaesperanzate/Desktop/cse 163/countries.csv'
+        'data/athletes.csv',
+        'data/countries.csv'
     )
     rq1_scatter(sums_on_geos(RQ1_data,
-                             '/Users/tiaesperanzate/Desktop/cse 163/'
-                             'World_Countries_Generalized/'
-                             'World_Countries_Generalized.shp'))
+                             'data/World_Countries_Generalized.shp'))
     rq1_maps(sums_on_geos(RQ1_data,
-                          '/Users/tiaesperanzate/Desktop/cse 163/'
-                          'World_Countries_Generalized/'
-                          'World_Countries_Generalized.shp'))
+                          'data/World_Countries_Generalized.shp'))
 
 
 if __name__ == '__main__':
