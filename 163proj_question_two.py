@@ -31,14 +31,11 @@ def main():
     RQ2_data = loadprojdata.RQ2_loading_data(
         'data/athletes.csv',
         'data/countries.csv',
-        'data/all.csv',
+        'data/World_Countries_Generalized.shp',
+        'data/all.csv'
     )
-    rq2_map(sums_on_geos(RQ1_data,
-                             '/Users/tiaesperanzate/Desktop/cse 163/'
-                             'World_Countries_Generalized/'
-                             'World_Countries_Generalized.shp'))
-
-
+    RQ2_map(RQ1_data)
+    
 
 if __name__ == '__main__':
     main()
