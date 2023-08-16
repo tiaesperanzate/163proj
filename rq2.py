@@ -10,9 +10,8 @@ athletes sent to 2016 Olympics by country.
 
 import geopandas as gpd
 import matplotlib.pyplot as plt
-import plotly.express as px
-
 import loadprojdata
+
 
 def RQ2_map(project_data: gpd.DataFrame) -> None:
     fig, [ax1, ax2] = plt.subplots(nrows=2)
@@ -27,6 +26,7 @@ def RQ2_map(project_data: gpd.DataFrame) -> None:
 
     plt.savefig('RQ2maps.png')
 
+
 def main():
     RQ2_data = loadprojdata.RQ2_loading_data(
         'data/athletes.csv',
@@ -34,7 +34,7 @@ def main():
         'data/World_Countries_Generalized.shp',
         'data/all.csv'
     )
-    RQ2_map(RQ1_data)
+    RQ2_map(RQ2_data)
     
 
 if __name__ == '__main__':
