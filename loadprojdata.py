@@ -21,16 +21,21 @@ def RQ1_loading_data(athlete_csv: str,
                              left_on='nationality',
                              right_on='code',
                              how='left')
-                       
-def RQ2_loading_data(athletes_csv: str, countries_csv: str,
-                     world_shp: str, iso_to_country_csv: str) -> gpd.DataFrame:
+                 
+
+def RQ2_loading_data(athletes_csv: str,
+                     countries_csv: str,
+                     world_shp: str,
+                     iso_to_country_csv: str) -> gpd.GeoDataFrame:
     athletes_df = pd.read_csv(athletes_csv)
     countries_df = pd.read_csv(countries_csv)
-    athletes_countries_merged = pd.merge(athletes_df, countries_df, 
-                                         left_on='nationality', 
+    athletes_countries_merged = pd.merge(athletes_df, countries_df,
+                                         left_on='nationality',
                                          right_on='code')
-    sex_data = pd.get_dummies(athletes_countries_merged[['nationality', 'sex']],
-                              columns=['sex']).groupby('nationality').sum().reset_index()
+    sex_data = pd.get_dummies(
+        athletes_countries_merged[['nationality', 'sex']],
+        columns=['sex']
+    ).groupby('nationality').sum().reset_index()
     world_data = gpd.read_file(world_shp)
     iso_to_country = pd.read_csv(iso_to_country_csv)
     geo_data = world_data.merge(
