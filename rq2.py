@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import loadprojdata
 
 
-def RQ2_map(project_data: gpd.DataFrame) -> None:
+def RQ2_map(project_data: gpd.GeoDataFrame) -> None:
     fig, [ax1, ax2] = plt.subplots(nrows=2)
     project_data.plot(color='#EEEEEE', ax=ax1)
     project_data.plot(column='sex_female', ax=ax1, legend=True)
@@ -35,7 +35,8 @@ def main():
         'data/all.csv'
     )
     RQ2_map(RQ2_data)
-    
+
 
 if __name__ == '__main__':
     main()
+    
