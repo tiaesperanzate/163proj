@@ -25,6 +25,10 @@ countries and medal distribution.
 
     * Creates maps for female athletes per country and male athletes per country
 
+* **rq3.py** - Answer research Question 3 "Is there a relationship between athletes’ measurements and medals won?"
+
+    * Creates scatterplot of the weight and height of the athelete that won each medal
+
 * **loadprojdata.py**
     * Loads in and merges the athletes and countries datasets
 
