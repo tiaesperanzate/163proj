@@ -71,4 +71,6 @@ $ pip install -U kaleidoscope
 4. Run the file *rq1.py* for research question 1 analysis
 
 5. Run the file *rq2.py* for resarch question 2 analysis
+
+6. 5. Run the file *rq3.py* for resarch question 3 analysis
    
