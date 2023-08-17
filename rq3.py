@@ -29,7 +29,7 @@ def rq3(data: pd.DataFrame) -> None:
 
 
 def main():
-    data: pd.DataFrame = pd.read_csv('athletes.csv')
+    data: pd.read_csv('athletes.csv')
     rq3(data)
 
 
