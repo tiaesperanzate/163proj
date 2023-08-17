@@ -27,7 +27,7 @@ countries and medal distribution.
 
 * **rq3.py** - Answer research Question 3 "Is there a relationship between athletes’ measurements and medals won?"
 
-    * Creates scatterplot of the weight and height of the athelete that won each medal
+    * Creates scatterplot of the weight and height of the athlete that won each medal
 
 * **loadprojdata.py**
     * Loads in and merges the athletes and countries datasets
