@@ -9,7 +9,7 @@ Document Including Full Report Details: [Link](https://docs.google.com/document/
 
 ## About the Files
 
-* **163proj.py** - Answers research Question 1 "Is there a relationship between GDP per capita and the amount of awarded medals of
+* **rq1.py** - Answers research Question 1 "Is there a relationship between GDP per capita and the amount of awarded medals of
 certain countries in 2016?"
 
     * Calculates medals awarded by country and normalizes
@@ -67,4 +67,4 @@ $ pip install -U kaleidoscope
 4. Run the file *rq1.py* for research question 1 analysis
 
 5. Run the file *rq2.py* for resarch question 2 analysis
-6. 
+   
