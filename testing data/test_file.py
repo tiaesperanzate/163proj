@@ -6,8 +6,6 @@ Tests methods in CSE 163 project.
 
 import geopandas as gpd
 
-from loadprojdata import RQ1_loading_data
-from rq1 import sums_on_geos
 from loadprojdata import RQ2_loading_data
 from cse163_utils import assert_equals
 
