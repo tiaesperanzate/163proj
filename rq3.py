@@ -3,17 +3,17 @@ Danika Lee
 CSE 163
 
 Group project: Research Question 3 filters relvant data from
-athlete.csv dataset. Creates a plotly scatter plot that takes
-athlete height and weight, each dot corresponding to which medal was won
-(ex. Yellow for gold, grey for silver, orange for bronze). The plot will
-show if there is a relationship between athlete measurements and medals
-won.
+athlete.csv dataset. Calculates the total medals won from each athlete.
+Creates a plotly scatter plot that takes athlete height and weight,
+each dot color corresponding to number of medals was won
+(ex. blue for zero, yellow for six, etc.). The plot will show if there
+is a relationship between athlete measurements and medals won.
 """
 import pandas as pd
 import plotly.express as px
 
 
-def rq3(data) -> None:
+def rq3(data: pd.DataFrame) -> None:
     """
     Reads in the athletes data to create a scatter plot
     Returns none
@@ -29,7 +29,7 @@ def rq3(data) -> None:
 
 
 def main():
-    data = pd.read_csv('athletes.csv')
+    data: pd.DataFrame = pd.read_csv('athletes.csv')
     rq3(data)
 
 
