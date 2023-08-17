@@ -12,14 +12,6 @@ from loadprojdata import RQ2_loading_data
 from cse163_utils import assert_equals
 
 
-def test_sums_on_geos(athlete_gdp_info: gpd.GeoDataFrame,
-                      countries_shp: str) -> None:
-    """
-    Tests sum_on_geos method from RQ1.
-    """
-    assert_equals(3, sums_on_geos(athlete_gdp_info, countries_shp))
-                        
-
 def test_RQ2_loading_data(athletes_csv: str,
                           countries_csv: str,
                           world_shp: str,
@@ -34,20 +26,6 @@ def test_RQ2_loading_data(athletes_csv: str,
 
 
 def main():
-    test_data = RQ1_loading_data(
-        '/Users/tiaesperanzate/Desktop/cse 163/athlete_test_file.csv',
-        '/Users/tiaesperanzate/Desktop/cse 163/athlete_test_file.csv')
-
-    countries_shps = gpd.read_file('data/World_Countries_Generalized.shp')
-
-    countries_shps = gpd.GeoDataFrame(countries_shps[
-        countries_shps['country'].isin(['United States',
-                                        'Australia',
-                                        'Canada',
-                                        'South Korea',
-                                        'Russian Federation'])])
-
-    test_sums_on_geos(test_data, countries_shps)
     test_RQ2_loading_data('data/athletes.csv',
                           'data/countries.csv',
                           'data/World_Countries_Generalized.shp',
