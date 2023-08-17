@@ -13,7 +13,7 @@ import pandas as pd
 import plotly.express as px
 
 
-def RQ3(data: DataFrame) -> None:
+def rq3(data: DataFrame) -> None:
     """
     Reads in the atheletes data to create a scatter plot 
     Returns none
@@ -37,4 +37,10 @@ def RQ3(data: DataFrame) -> None:
                      'Bronze': 'orange'})
     fig.update_xaxes(title_text='Height (m)')
     fig.update_yaxes(title_text='Weight (kg)')
-    fig.show()
+
+def main():
+    rq3(data: DataFrame)
+
+
+if __name__ == '__main__':
+    main()
