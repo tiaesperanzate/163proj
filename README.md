@@ -31,6 +31,9 @@ countries and medal distribution.
 
 * **loadprojdata.py**
     * Loads in and merges the athletes and countries datasets
+ 
+* **test_file.py**
+    * Tests the loading data function in rq2
 
 ## Libraries Necessary for Installation
 
