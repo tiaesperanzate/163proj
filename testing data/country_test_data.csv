@@ -1,0 +1,6 @@
+'code', 'country', 'population', 'gdp_per_capita'
+'USA', 'United States', 12, 7
+'AUS', 'Australia', 7, 5
+'CAN', 'Canada', 9, 9
+'KOR', 'Korea, South', 6, 2
+'RUS', 'Russia', 10, 4
