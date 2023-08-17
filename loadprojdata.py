@@ -21,7 +21,7 @@ def RQ1_loading_data(athlete_csv: str,
                              left_on='nationality',
                              right_on='code',
                              how='left')
-                 
+
 
 def RQ2_loading_data(athletes_csv: str,
                      countries_csv: str,
