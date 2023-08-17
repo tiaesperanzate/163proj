@@ -18,7 +18,6 @@ def rq3(data: DataFrame) -> None:
     Reads in the atheletes data to create a scatter plot 
     Returns none
     """
-    data = pd.read_csv('athletes.csv')
     col = ['gold', 'silver', 'bronze', 'height', 'weight']
     d = col[(col['gold'] >= 1) | (col['silver'] >= 1)
                      | (col['bronze'] >= 1)]
@@ -39,6 +38,7 @@ def rq3(data: DataFrame) -> None:
     fig.update_yaxes(title_text='Weight (kg)')
 
 def main():
+    data = pd.read_csv('athletes.csv')
     rq3(data: DataFrame)
 
 
