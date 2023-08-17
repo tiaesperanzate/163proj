@@ -39,8 +39,10 @@ countries and medal distribution.
 * MatPlotLib
 * Plotly
 > Installation Line: pip install plotly
-
+>
 > Installation Line: pip install -U kaleido
+
+> (Optional) download cse163_utils.py for running the testing file [here](https://github.com/tiaesperanzate/163proj/blob/main/testing%20data/cse163_utils.py)
 
 
 
@@ -73,4 +75,6 @@ $ pip install -U kaleidoscope
 5. Run the file *rq2.py* for resarch question 2 analysis
 
 6. Run the file *rq3.py* for resarch question 3 analysis
+
+7. *(Optional) Run our test file test_file.py*
    
