@@ -22,7 +22,7 @@ def rq3(data: pd.DataFrame) -> None:
     df['total'] = df['gold'] + df['silver'] + df['bronze']
     df = df[df['total'] >= 1]
     fig = px.scatter(df, x='height', y='weight', color='total',
-                     title="Olympic Athelete Measurements and Medals Won")
+                     title="Olympic Athlete Measurements and Medals Won")
     fig.update_xaxes(title_text='Height (m)')
     fig.update_yaxes(title_text='Weight (kg)')
     fig.show()
