@@ -4,8 +4,6 @@ CSE 163
 Tests methods in CSE 163 project.
 """
 
-import geopandas as gpd
-
 from loadprojdata import RQ2_loading_data
 from cse163_utils import assert_equals
 
