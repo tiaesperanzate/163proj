@@ -14,6 +14,12 @@ import loadprojdata
 
 
 def RQ2_map(project_data: gpd.GeoDataFrame) -> None:
+    """
+    Takes in GeoDataFrame of the project data
+    and creates a map showing the female athletes
+    sent to 2016 olympics by country and male athletes
+    sent to 2016 olypmics by country side by side.
+    """
     fig, [ax1, ax2] = plt.subplots(nrows=2)
     project_data.plot(color='#EEEEEE', ax=ax1)
     project_data.plot(column='sex_female', ax=ax1, legend=True)
